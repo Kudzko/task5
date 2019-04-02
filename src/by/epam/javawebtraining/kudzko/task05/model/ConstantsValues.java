@@ -15,6 +15,7 @@ public class ConstantsValues {
     public static final int AMOUNT_SHIPS = Integer.parseInt(consts[3]);
     public static final int SHIP_STORE_CAPACITY = Integer.parseInt(consts[4]);
     public static final int AMOUNT_CONTEINERS = Integer.parseInt(consts[5]);
+    public static final int GO_AWAY_TIME_MILSEC = Integer.parseInt(consts[6]);
 
     private static String[] readConsts() {
 
@@ -28,13 +29,15 @@ public class ConstantsValues {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        String[] consts = new String[6];
+        String[] consts = new String[7];
+
         consts[0] = properties.getProperty("GO_AROUND_TIME_MILSEC");
         consts[1] = properties.getProperty("SEAPORT_STORE_CAPACITY");
         consts[2] = properties.getProperty("AMOUNT_BERSTHS");
         consts[3] = properties.getProperty("AMOUNT_SHIPS");
         consts[4] = properties.getProperty("SHIP_STORE_CAPACITY");
         consts[5] = properties.getProperty("AMOUNT_CONTEINERS");
+        consts[6] = properties.getProperty("GO_AWAY_TIME_MILSEC");
         return consts;
     }
 }

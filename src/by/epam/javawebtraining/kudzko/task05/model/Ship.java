@@ -11,6 +11,8 @@ import java.util.concurrent.TimeUnit;
 public class Ship implements Runnable {
     public static final Logger LOGGER;
     public final int GO_AROUND_TIME_MILSEC = ConstantsValues.GO_AROUND_TIME_MILSEC;
+    public final int GO_AWAY_TIME_MILSEC = ConstantsValues
+            .GO_AROUND_TIME_MILSEC;
     public int CAPACITY;
     private Store internalStore;
     private Thread thread;
@@ -32,38 +34,45 @@ public class Ship implements Runnable {
 
     @Override
     public void run() {
-        LOGGER.info("[Thread id = " + this.thread.getId()+" name = "+ this
+        LOGGER.info("[Thread " + " name = " + this
                 .thread.getName() + "] " +
                 " is " +
-                "STARTED.]");
+                "STARTED.");
         while (flow) {
 
             List<Berth> berths = seaPort.getBerths();
+            Berth currentBerth;
             for (int i = 0; i < berths.size(); i++) {
-                Berth currentBerth = berths.get(i);
+                currentBerth = berths.get(i);
                 if (currentBerth.isEmpty()) {
                     try {
                         if (!internalStore.isEmpty()) {
                             try {
-                                LOGGER.info("[ " + this.thread.getName() +
-                                        "] containers are loading  from SHIP " +
-                                        "to STORE");
+                                LOGGER.info("[" + this.thread.getName() +
+                                        "] [berth " + currentBerth
+                                        .getId() + "] containers are " +
+                                        "loading  from SHIP to STORE");
                                 currentBerth.downLoadStore(this);
                                 LOGGER.info("[ " + this.thread.getName() +
-                                        "] containers are loaded  from SHIP " +
-                                        "to STORE");
+                                        "] [berth " + currentBerth
+                                        .getId() + "] containers are " +
+                                        "loaded  from SHIP to STORE");
+
                             } catch (OutOfStoreCapacityException e) {
                                 LOGGER.warn("Berth can not downLoadStore! ", e);
                             }
                         } else {
                             try {
                                 LOGGER.info("[ " + this.thread.getName() +
-                                        "] containers are loading from STORE " +
+                                        "] [berth " + currentBerth
+                                        .getId() + "] containers are loading from STORE " +
                                         "to SHIP");
                                 currentBerth.upLoadStore(this);
                                 LOGGER.info("[ " + this.thread.getName() +
-                                        "] containers are loaded from STORE " +
+                                        "] [berth " + currentBerth
+                                        .getId() + "] containers are loaded from STORE " +
                                         "to SHIP");
+
                             } catch (EmptyStoreException e) {
                                 LOGGER.warn("Berth can not upLoadStore! ", e);
                             }
@@ -73,16 +82,22 @@ public class Ship implements Runnable {
                         currentBerth.leave();
                     }
 
+                    try {
+                        LOGGER.info("[ " + this.thread.getName() + "] went  TO " +
+                                "THE TRIP");
+                        TimeUnit.MILLISECONDS.sleep(GO_AWAY_TIME_MILSEC);
+                        LOGGER.info("[ " + this.thread.getName() + "] went  " +
+                                "FROM THE TRIP");
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
-
-
-
             }
 
             try {
-                LOGGER.info("[ "+this.thread.getName() + "] go around");
+                LOGGER.info("[ " + this.thread.getName() + "] go around");
                 TimeUnit.MILLISECONDS.sleep(GO_AROUND_TIME_MILSEC);
-                LOGGER.info("[ "+this.thread.getName() + "] go back");
+                LOGGER.info("[ " + this.thread.getName() + "] go back");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

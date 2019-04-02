@@ -7,12 +7,19 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Berth {
+    private static int idCounter=0;
+    private int id = 0;
     private Store store;
     private Lock berthLock = new ReentrantLock();
 
 
+    {
+        idCounter++;
+    }
+
     public Berth(Store store) {
         this.store = store;
+        this.id = idCounter;
     }
 
     public boolean isEmpty() {
@@ -22,7 +29,7 @@ public class Berth {
 
     public void downLoadStore(Ship ship) throws OutOfStoreCapacityException {
 
-        while (ship.hasConteiners()) {
+        while (ship.hasConteiners() && store.hasPlace()) {
             if (store.hasPlace()) {
                 store.put(ship.getInternalStore().get());
 
@@ -32,7 +39,7 @@ public class Berth {
 
     public void upLoadStore(Ship ship) throws EmptyStoreException {
         Store shipInternalStore = ship.getInternalStore();
-        while (shipInternalStore.hasPlace()) {
+        while (shipInternalStore.hasPlace() && !store.isEmpty()) {
             if (!store.isEmpty()) {
                 try {
                     shipInternalStore.put(store.get());
@@ -46,5 +53,9 @@ public class Berth {
 
     public void leave(){
         berthLock.unlock();
+    }
+
+    public int getId() {
+        return id;
     }
 }
