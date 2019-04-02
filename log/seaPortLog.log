@@ -223,3 +223,191 @@
 23:34:38 INFO  root:71 - [ Thread-9] [berth 2] containers are loaded from STORE to SHIP
 23:34:38 INFO  root:86 - [ Thread-9] went  TO THE TRIP
 23:34:38 INFO  root:86 - [ Thread-2] went  TO THE TRIP
+00:01:46 INFO  root:34 - < Main has started. >
+00:01:46 INFO  root:52 - < SeaPort created. > 
+00:01:46 INFO  root:53 - < Threads starting... > 
+00:01:46 INFO  root:37 - [Thread  name = Thread-1]  is STARTED.
+00:01:46 INFO  root:37 - [Thread  name = Thread-2]  is STARTED.
+00:01:46 INFO  root:37 - [Thread  name = Thread-0]  is STARTED.
+00:01:46 INFO  root:66 - [ Thread-2] [berth 2] containers are loading from STORE to SHIP
+00:01:46 INFO  root:37 - [Thread  name = Thread-9]  is STARTED.
+00:01:46 INFO  root:98 - [ Thread-9] go around
+00:01:46 INFO  root:71 - [ Thread-2] [berth 2] containers are loaded from STORE to SHIP
+00:01:46 INFO  root:37 - [Thread  name = Thread-8]  is STARTED.
+00:01:46 INFO  root:37 - [Thread  name = Thread-7]  is STARTED.
+00:01:46 INFO  root:37 - [Thread  name = Thread-6]  is STARTED.
+00:01:46 INFO  root:37 - [Thread  name = Thread-5]  is STARTED.
+00:01:46 INFO  root:37 - [Thread  name = Thread-4]  is STARTED.
+00:01:46 INFO  root:37 - [Thread  name = Thread-3]  is STARTED.
+00:01:46 INFO  root:66 - [ Thread-1] [berth 1] containers are loading from STORE to SHIP
+00:01:46 INFO  root:71 - [ Thread-1] [berth 1] containers are loaded from STORE to SHIP
+00:01:46 INFO  root:98 - [ Thread-3] go around
+00:01:46 INFO  root:98 - [ Thread-4] go around
+00:01:46 INFO  root:98 - [ Thread-5] go around
+00:01:46 INFO  root:98 - [ Thread-6] go around
+00:01:46 INFO  root:98 - [ Thread-7] go around
+00:01:46 INFO  root:66 - [ Thread-8] [berth 2] containers are loading from STORE to SHIP
+00:01:46 INFO  root:86 - [ Thread-2] went  TO THE TRIP
+00:01:46 INFO  root:98 - [ Thread-0] go around
+00:01:46 INFO  root:71 - [ Thread-8] [berth 2] containers are loaded from STORE to SHIP
+00:01:46 INFO  root:86 - [ Thread-1] went  TO THE TRIP
+00:01:46 INFO  root:86 - [ Thread-8] went  TO THE TRIP
+00:01:47 INFO  root:100 - [ Thread-9] go back
+00:01:47 INFO  root:66 - [ Thread-9] [berth 1] containers are loading from STORE to SHIP
+00:01:47 INFO  root:71 - [ Thread-9] [berth 1] containers are loaded from STORE to SHIP
+00:01:47 INFO  root:86 - [ Thread-9] went  TO THE TRIP
+00:01:47 INFO  root:100 - [ Thread-7] go back
+00:01:47 INFO  root:100 - [ Thread-3] go back
+00:01:47 INFO  root:66 - [ Thread-3] [berth 1] containers are loading from STORE to SHIP
+00:01:47 INFO  root:100 - [ Thread-4] go back
+00:01:47 INFO  root:98 - [ Thread-4] go around
+00:01:47 INFO  root:100 - [ Thread-5] go back
+00:01:47 INFO  root:100 - [ Thread-6] go back
+00:01:47 INFO  root:100 - [ Thread-0] go back
+00:01:47 INFO  root:98 - [ Thread-6] go around
+00:01:47 INFO  root:98 - [ Thread-5] go around
+00:01:47 INFO  root:66 - [ Thread-7] [berth 2] containers are loading from STORE to SHIP
+00:01:47 INFO  root:71 - [ Thread-3] [berth 1] containers are loaded from STORE to SHIP
+00:01:47 INFO  root:71 - [ Thread-7] [berth 2] containers are loaded from STORE to SHIP
+00:01:47 INFO  root:98 - [ Thread-0] go around
+00:01:47 INFO  root:86 - [ Thread-7] went  TO THE TRIP
+00:01:47 INFO  root:86 - [ Thread-3] went  TO THE TRIP
+00:01:48 INFO  root:100 - [ Thread-6] go back
+00:01:48 INFO  root:100 - [ Thread-0] go back
+00:01:48 INFO  root:100 - [ Thread-4] go back
+00:01:48 INFO  root:100 - [ Thread-5] go back
+00:01:48 INFO  root:98 - [ Thread-4] go around
+00:01:48 INFO  root:66 - [ Thread-0] [berth 2] containers are loading from STORE to SHIP
+00:01:48 INFO  root:66 - [ Thread-6] [berth 1] containers are loading from STORE to SHIP
+00:01:48 INFO  root:71 - [ Thread-0] [berth 2] containers are loaded from STORE to SHIP
+00:01:48 INFO  root:98 - [ Thread-5] go around
+00:01:48 INFO  root:86 - [ Thread-0] went  TO THE TRIP
+00:01:48 INFO  root:71 - [ Thread-6] [berth 1] containers are loaded from STORE to SHIP
+00:01:48 INFO  root:86 - [ Thread-6] went  TO THE TRIP
+00:01:49 INFO  root:100 - [ Thread-5] go back
+00:01:49 INFO  root:100 - [ Thread-4] go back
+00:01:49 INFO  root:66 - [ Thread-5] [berth 1] containers are loading from STORE to SHIP
+00:01:49 INFO  root:66 - [ Thread-4] [berth 2] containers are loading from STORE to SHIP
+00:01:49 INFO  root:71 - [ Thread-4] [berth 2] containers are loaded from STORE to SHIP
+00:01:49 INFO  root:71 - [ Thread-5] [berth 1] containers are loaded from STORE to SHIP
+00:01:49 INFO  root:86 - [ Thread-4] went  TO THE TRIP
+00:01:49 INFO  root:86 - [ Thread-5] went  TO THE TRIP
+00:01:51 INFO  root:89 - [ Thread-8] went  FROM THE TRIP
+00:01:51 INFO  root:98 - [ Thread-8] go around
+00:01:51 INFO  root:89 - [ Thread-1] went  FROM THE TRIP
+00:01:51 INFO  root:89 - [ Thread-2] went  FROM THE TRIP
+00:01:51 INFO  root:98 - [ Thread-2] go around
+00:01:51 INFO  root:51 - [Thread-1] [berth 2] containers are loading  from SHIP to STORE
+00:01:51 INFO  root:56 - [ Thread-1] [berth 2] containers are loaded  from SHIP to STORE
+00:01:51 INFO  root:86 - [ Thread-1] went  TO THE TRIP
+00:01:52 INFO  root:89 - [ Thread-9] went  FROM THE TRIP
+00:01:52 INFO  root:51 - [Thread-9] [berth 2] containers are loading  from SHIP to STORE
+00:01:52 INFO  root:100 - [ Thread-2] go back
+00:01:52 INFO  root:51 - [Thread-2] [berth 1] containers are loading  from SHIP to STORE
+00:01:52 INFO  root:100 - [ Thread-8] go back
+00:01:52 INFO  root:98 - [ Thread-8] go around
+00:01:52 INFO  root:56 - [ Thread-2] [berth 1] containers are loaded  from SHIP to STORE
+00:01:52 INFO  root:86 - [ Thread-2] went  TO THE TRIP
+00:01:52 INFO  root:56 - [ Thread-9] [berth 2] containers are loaded  from SHIP to STORE
+00:01:52 INFO  root:86 - [ Thread-9] went  TO THE TRIP
+00:01:52 INFO  root:89 - [ Thread-7] went  FROM THE TRIP
+00:01:52 INFO  root:98 - [ Thread-7] go around
+00:01:52 INFO  root:89 - [ Thread-3] went  FROM THE TRIP
+00:01:52 INFO  root:51 - [Thread-3] [berth 2] containers are loading  from SHIP to STORE
+00:01:52 INFO  root:56 - [ Thread-3] [berth 2] containers are loaded  from SHIP to STORE
+00:01:52 INFO  root:86 - [ Thread-3] went  TO THE TRIP
+00:01:53 INFO  root:100 - [ Thread-8] go back
+00:01:53 INFO  root:51 - [Thread-8] [berth 1] containers are loading  from SHIP to STORE
+00:01:53 INFO  root:56 - [ Thread-8] [berth 1] containers are loaded  from SHIP to STORE
+00:01:53 INFO  root:86 - [ Thread-8] went  TO THE TRIP
+00:01:53 INFO  root:100 - [ Thread-7] go back
+00:01:53 INFO  root:66 - [ Thread-7] [berth 1] containers are loading from STORE to SHIP
+00:01:53 INFO  root:71 - [ Thread-7] [berth 1] containers are loaded from STORE to SHIP
+00:01:53 INFO  root:86 - [ Thread-7] went  TO THE TRIP
+00:01:53 INFO  root:89 - [ Thread-0] went  FROM THE TRIP
+00:01:53 INFO  root:98 - [ Thread-0] go around
+00:01:53 INFO  root:89 - [ Thread-6] went  FROM THE TRIP
+00:01:53 INFO  root:66 - [ Thread-6] [berth 2] containers are loading from STORE to SHIP
+00:01:53 INFO  root:71 - [ Thread-6] [berth 2] containers are loaded from STORE to SHIP
+00:01:53 INFO  root:86 - [ Thread-6] went  TO THE TRIP
+00:06:24 INFO  root:34 - < Main has started. >
+00:06:24 INFO  root:52 - < SeaPort created. > 
+00:06:24 INFO  root:53 - < Threads starting... > 
+00:06:24 INFO  root:37 - [Thread  name = Thread-1]  is STARTED.
+00:06:24 INFO  root:37 - [Thread  name = Thread-0]  is STARTED.
+00:06:24 INFO  root:37 - [Thread  name = Thread-9]  is STARTED.
+00:06:24 INFO  root:37 - [Thread  name = Thread-8]  is STARTED.
+00:06:24 INFO  root:37 - [Thread  name = Thread-7]  is STARTED.
+00:06:24 INFO  root:116 - [ Thread-7] go around
+00:06:24 INFO  root:37 - [Thread  name = Thread-6]  is STARTED.
+00:06:24 INFO  root:37 - [Thread  name = Thread-5]  is STARTED.
+00:06:24 INFO  root:37 - [Thread  name = Thread-4]  is STARTED.
+00:06:24 INFO  root:37 - [Thread  name = Thread-3]  is STARTED.
+00:06:24 INFO  root:37 - [Thread  name = Thread-2]  is STARTED.
+00:06:24 INFO  root:75 - [ Thread-1] [berth 1] containers are loading from STORE to SHIP
+00:06:24 INFO  root:116 - [ Thread-2] go around
+00:06:24 INFO  root:116 - [ Thread-3] go around
+00:06:24 INFO  root:116 - [ Thread-4] go around
+00:06:24 INFO  root:116 - [ Thread-5] go around
+00:06:24 INFO  root:116 - [ Thread-6] go around
+00:06:24 INFO  root:116 - [ Thread-8] go around
+00:06:24 INFO  root:116 - [ Thread-9] go around
+00:06:24 INFO  root:75 - [ Thread-0] [berth 2] containers are loading from STORE to SHIP
+00:06:24 INFO  root:80 - [ Thread-1] [berth 1] containers are loaded from STORE to SHIP
+00:06:24 INFO  root:80 - [ Thread-0] [berth 2] containers are loaded from STORE to SHIP
+00:06:24 INFO  root:104 - [ Thread-1] went  TO THE TRIP
+00:06:24 INFO  root:104 - [ Thread-0] went  TO THE TRIP
+00:06:25 INFO  root:118 - [ Thread-3] go back
+00:06:25 INFO  root:118 - [ Thread-7] go back
+00:06:25 INFO  root:118 - [ Thread-2] go back
+00:06:25 INFO  root:118 - [ Thread-4] go back
+00:06:25 INFO  root:116 - [ Thread-2] go around
+00:06:25 INFO  root:75 - [ Thread-7] [berth 2] containers are loading from STORE to SHIP
+00:06:25 INFO  root:75 - [ Thread-3] [berth 1] containers are loading from STORE to SHIP
+00:06:25 INFO  root:80 - [ Thread-7] [berth 2] containers are loaded from STORE to SHIP
+00:06:25 INFO  root:116 - [ Thread-4] go around
+00:06:25 INFO  root:80 - [ Thread-3] [berth 1] containers are loaded from STORE to SHIP
+00:06:25 INFO  root:118 - [ Thread-9] go back
+00:06:25 INFO  root:116 - [ Thread-9] go around
+00:06:25 INFO  root:118 - [ Thread-8] go back
+00:06:25 INFO  root:118 - [ Thread-5] go back
+00:06:25 INFO  root:118 - [ Thread-6] go back
+00:06:25 INFO  root:116 - [ Thread-5] go around
+00:06:25 INFO  root:116 - [ Thread-8] go around
+00:06:25 INFO  root:116 - [ Thread-6] go around
+00:06:25 INFO  root:104 - [ Thread-7] went  TO THE TRIP
+00:06:25 INFO  root:104 - [ Thread-3] went  TO THE TRIP
+00:06:26 INFO  root:118 - [ Thread-4] go back
+00:06:26 INFO  root:118 - [ Thread-9] go back
+00:06:26 INFO  root:118 - [ Thread-2] go back
+00:06:26 INFO  root:116 - [ Thread-2] go around
+00:06:26 INFO  root:75 - [ Thread-9] [berth 2] containers are loading from STORE to SHIP
+00:06:26 INFO  root:80 - [ Thread-9] [berth 2] containers are loaded from STORE to SHIP
+00:06:26 INFO  root:75 - [ Thread-4] [berth 1] containers are loading from STORE to SHIP
+00:06:26 INFO  root:80 - [ Thread-4] [berth 1] containers are loaded from STORE to SHIP
+00:06:26 INFO  root:118 - [ Thread-5] go back
+00:06:26 INFO  root:116 - [ Thread-5] go around
+00:06:26 INFO  root:118 - [ Thread-8] go back
+00:06:26 INFO  root:116 - [ Thread-8] go around
+00:06:26 INFO  root:118 - [ Thread-6] go back
+00:06:26 INFO  root:116 - [ Thread-6] go around
+00:06:26 INFO  root:104 - [ Thread-9] went  TO THE TRIP
+00:06:26 INFO  root:104 - [ Thread-4] went  TO THE TRIP
+00:06:27 INFO  root:118 - [ Thread-5] go back
+00:06:27 INFO  root:118 - [ Thread-8] go back
+00:06:27 INFO  root:118 - [ Thread-2] go back
+00:06:27 INFO  root:116 - [ Thread-2] go around
+00:06:27 INFO  root:118 - [ Thread-6] go back
+00:06:27 INFO  root:75 - [ Thread-5] [berth 1] containers are loading from STORE to SHIP
+00:06:27 INFO  root:80 - [ Thread-5] [berth 1] containers are loaded from STORE to SHIP
+00:06:27 INFO  root:116 - [ Thread-6] go around
+00:06:27 INFO  root:75 - [ Thread-8] [berth 2] containers are loading from STORE to SHIP
+00:06:27 INFO  root:80 - [ Thread-8] [berth 2] containers are loaded from STORE to SHIP
+00:06:27 INFO  root:104 - [ Thread-5] went  TO THE TRIP
+00:06:27 INFO  root:104 - [ Thread-8] went  TO THE TRIP
+00:06:28 INFO  root:118 - [ Thread-2] go back
+00:06:28 INFO  root:75 - [ Thread-2] [berth 1] containers are loading from STORE to SHIP
+00:06:28 INFO  root:80 - [ Thread-2] [berth 1] containers are loaded from STORE to SHIP
+00:06:28 INFO  root:118 - [ Thread-6] go back
+00:06:28 INFO  root:75 - [ Thread-6] [berth 2] containers are loading from STORE to SHIP
+00:06:28 INFO  root:80 - [ Thread-6] [berth 2] containers are loaded from STORE to SHIP

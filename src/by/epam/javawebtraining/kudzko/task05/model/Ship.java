@@ -12,7 +12,7 @@ public class Ship implements Runnable {
     public static final Logger LOGGER;
     public final int GO_AROUND_TIME_MILSEC = ConstantsValues.GO_AROUND_TIME_MILSEC;
     public final int GO_AWAY_TIME_MILSEC = ConstantsValues
-            .GO_AROUND_TIME_MILSEC;
+            .GO_AWAY_TIME_MILSEC;
     public int CAPACITY;
     private Store internalStore;
     private Thread thread;
@@ -58,6 +58,15 @@ public class Ship implements Runnable {
                                         .getId() + "] containers are " +
                                         "loaded  from SHIP to STORE");
 
+                            //++++++++++++++++++++++++++++delay
+                                try {
+                                    TimeUnit.MILLISECONDS.sleep(100);
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                            //------------------------------delay
+
+
                             } catch (OutOfStoreCapacityException e) {
                                 LOGGER.warn("Berth can not downLoadStore! ", e);
                             }
@@ -72,6 +81,15 @@ public class Ship implements Runnable {
                                         "] [berth " + currentBerth
                                         .getId() + "] containers are loaded from STORE " +
                                         "to SHIP");
+
+                                //++++++++++++++++++++++++++++delay
+                                try {
+                                    TimeUnit.MILLISECONDS.sleep(100);
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                                //------------------------------delay
+
 
                             } catch (EmptyStoreException e) {
                                 LOGGER.warn("Berth can not upLoadStore! ", e);
