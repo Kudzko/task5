@@ -6,7 +6,8 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class Store {
-    public final int REMOVE_INDEX = 0;
+    public static final int REMOVE_INDEX = 0;
+
     public int CAPACITY;
     private List<Container> containers;
 
@@ -30,7 +31,7 @@ public class Store {
     }
 
     public Container get() {
-//        if (!containers.isEmpty()) {
+//        if (!containers.isFree()) {
             return containers.remove(REMOVE_INDEX);
 //        }else{
 //            throw new EmptyStoreException();
@@ -49,4 +50,31 @@ public class Store {
         containers.add(container);
     }
 
+    public Container remove(int index){
+        return containers.remove(index);
+    }
+
+
+    public int amountContainers(){
+        return containers.size();
+    }
+
+    public int availiablePlaces(){
+        return CAPACITY - containers.size();
+    }
+
+    public List<Container> getContainers() {
+        return containers;
+    }
+
+    public void setContainers(List<Container> containers) {
+        this.containers = containers;
+    }
+
+    @Override
+    public String toString() {
+        return "Store{" +
+                "containers=" + containers +
+                '}';
+    }
 }

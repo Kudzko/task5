@@ -22,7 +22,8 @@ public class ConstantsValues {
         Properties properties = new Properties();
         try {
             FileInputStream constant = new FileInputStream
-                    ("F:\\git_rep\\task5\\src\\by\\epam\\javawebtraining\\kudzko\\task05\\model\\ConstantsValues.properties");
+                    (".\\src\\by\\epam\\javawebtraining\\kudzko\\task05" +
+                            "\\model\\ConstantsValues.properties");
             properties.load(constant);
         } catch (FileNotFoundException e) {
             e.printStackTrace();

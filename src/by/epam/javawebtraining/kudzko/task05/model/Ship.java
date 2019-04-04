@@ -10,10 +10,13 @@ import java.util.concurrent.TimeUnit;
 
 public class Ship implements Runnable {
     public static final Logger LOGGER;
+
     public final int GO_AROUND_TIME_MILSEC = ConstantsValues.GO_AROUND_TIME_MILSEC;
     public final int GO_AWAY_TIME_MILSEC = ConstantsValues
             .GO_AWAY_TIME_MILSEC;
+
     public int CAPACITY;
+
     private Store internalStore;
     private Thread thread;
     private SeaPort seaPort;
@@ -44,7 +47,7 @@ public class Ship implements Runnable {
             Berth currentBerth;
             for (int i = 0; i < berths.size(); i++) {
                 currentBerth = berths.get(i);
-                if (currentBerth.isEmpty()) {
+                if (currentBerth.isFree()) {
                     try {
                         if (!internalStore.isEmpty()) {
                             try {
@@ -126,8 +129,8 @@ public class Ship implements Runnable {
         return flow;
     }
 
-    public void setFlow(boolean flow) {
-        this.flow = flow;
+    public void stop() {
+        this.flow = false;
     }
 
     public boolean hasConteiners() {
@@ -136,5 +139,15 @@ public class Ship implements Runnable {
 
     public Store getInternalStore() {
         return internalStore;
+    }
+
+    @Override
+    public String toString() {
+        return "Ship{" +
+                "internalStore=" + internalStore +
+                ", thread=" + thread +
+                ", seaPort=" + seaPort +
+                ", id=" + id +
+                '}';
     }
 }

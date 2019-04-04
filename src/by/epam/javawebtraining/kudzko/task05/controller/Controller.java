@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class Controller {
     public static final int SEAPORT_STORE_CAPACITY = ConstantsValues
@@ -51,11 +52,26 @@ public class Controller {
 
         LOGGER.info("< SeaPort created. > ");
         LOGGER.info("< Threads starting... > ");
-        for (int i=0; i < 10 ; i++) {
 
-            poolShips.execute(new Ship(seaPort, SHIP_STORE_CAPACITY));
-            }
+        List<Ship> ships = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            ships.add(new Ship(seaPort, SHIP_STORE_CAPACITY));
+        }
+        for (int i = 0; i < 10; i++) {
+            poolShips.execute(ships.get(i));;
+        }
+        poolShips.shutdown();
 
+
+        try {
+            TimeUnit.SECONDS.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        for (int i = 0; i < 10; i++) {
+            ships.get(i).stop();
+        }
 
     }
 }
